@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  body {
+    background-color: darkred;
+  }
+
+nav {
+    background-color: #b8734b;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  }
+  
+  nav img {
+    width: 90px;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+      display: flex;
+      
+  }
+  nav ul li {
+    padding-right: 5rem;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul li a:hover {
+    color: darkred
+  }
+  .navbar {
+      color: darkred;
+  }
+  .na-vrh {
+    position: fixed; /* fiksirana pozicija */
+    bottom: 40px; /* udaljenost od donje ivice ekrana */
+    right: 40px; /* udaljenost od desne ivice ekrana */
+	text-decoration: none; /* običan tekst / nije podvučen */
+    color: #fff; /* boja teksta */
+    background-color: rgba(0, 0, 0, 0.3); /* 30% vidljivost crne pozadine */
+    padding: 15px;
+}
+.na-vrh:hover {
+    background-color:  rgba(0, 0, 0, 0.5); /* 50% vidljivost crne pozadine */
+}
+
+  #heder {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    height: 80vh;
+      background: darkred;
+  }
+
+  #heder .naslov {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  }
+
+  #heder .btn {
+  
+    border: 2px solid darkred;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+    font-size: 35px;
+    padding: 0.5rem;
+  }
+  #heder .btn:hover {
+    color: darkred;
+    background-color: #b8734b;
+  }
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  background-color: darkred;
+}
+h5 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px
+}
+section{
+  background-color: #b8734b;
+  font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#katalog1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  grid-gap: 10px;
+}
+#katalog1 p {
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  font-size: 1.7rem;
+}
+
+#katalog1 img{
+  width: 100%;
+}
+
+#katalog2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  grid-gap: 10px;
+}
+#katalog2 p {
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  font-size: 1.7rem;
+}
+
+#katalog2 img{
+  width: 100%;
+}
+
+#katalog3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  grid-gap: 20px;
+}
+#katalog3 p {
+  color: white;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  font-size: 1.7rem;
+}
+
+#katalog3 img{
+  width: 100%;
+}
+
+
+
+
+
+
+  footer {
+    background-color: #b8734b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  footer img {
+    width: 100px;
+  }

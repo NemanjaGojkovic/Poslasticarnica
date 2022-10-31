@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+nav {
+    background-color: #b8734b;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  }
+  
+  nav img {
+    width: 90px;
+    
+  }
+
+  nav ul {
+      display: flex;
+      
+  }
+  nav ul li {
+    padding-right: 5rem;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul li a:hover {
+    color: darkred
+  }
+  .navbar {
+      color: darkred;
+  }
+  .na-vrh {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+	text-decoration: none; 
+    color: darkred; /* boja teksta */
+    background-color: #b8734b; 
+    padding: 15px;
+}
+.na-vrh:hover {
+    background-color:  rgba(58, 53, 53, 0.5);
+}
+
+
+
+   /*heder home*/
+
+  #heder {
+    height: 120vh;
+    background: url("../img/R.jpg") center/cover #b8734b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #heder .naslov {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  }
+
+  #heder .naslov p {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  #heder .btn {
+    border: 2px solid darkred;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+    font-size: 35px;
+    padding: 0.5rem;
+  }
+  #heder .btn:hover {
+      color: darkred;
+      background-color: #b8734b;
+  }
+  section{
+    background-color: darkred;
+    display: grid;
+}
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+}
+
+#sredina {
+    color: white;
+    background-color: darkred;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+
+}
+#sredina img {
+    width: 30%;
+}
+#sredina p {
+  font-size: 2rem;
+}
+ hr{
+  margin: 10px 50px 10px 50px;
+ }
+
+/* Footer */
+footer {
+  background-color: #b8734b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 100px;
+}

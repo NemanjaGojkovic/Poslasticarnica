@@ -1,0 +1,125 @@
+
+
+#galerija .slike {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   
+   #galerija .slike {
+    padding: 0 1rem;
+   }
+   
+   #kontakt #mapa {
+    width: 100%;
+   
+   }
+   
+   #kontakt .map {
+    margin-bottom: 2rem;
+   }
+   
+   #kontakt h1 {
+    padding: 2rem 0;
+   }
+   
+   #kontakt .forma {
+    margin-bottom: 2rem;
+   }
+
+   #hederOnama {
+       grid-template-columns: 1fr;
+   }
+
+
+   
+   
+  
+   @media(max-width:880px) {
+   
+    #sredina {
+     grid-template-columns: 1fr;
+     grid-gap: 2rem;
+    }
+    
+   
+    
+   
+   
+    #kontakt .forma h2 {
+     text-align: center;
+    }
+   
+    #kontakt .forma p,
+    #kontakt .forma form small {
+     display: none;
+    }
+   
+   
+    #kontakt .map {
+     margin-bottom: 1rem;
+    }
+   
+   
+   }
+
+   @media(max-width: 852px) {
+    nav {
+     position: static;
+   
+    }
+   
+    #heder .naslov p {
+     font-size: 2rem;
+    }
+   
+    nav {
+     flex-direction: column;
+     align-items: center;
+   
+    }
+   
+    nav ul {
+     flex-direction: column;
+     align-items: center;
+    }
+   
+    nav img {
+     margin-top: 0.5rem;
+   
+    }
+   
+    nav ul li {
+     padding-top: 0.8rem;
+    }
+   
+    nav ul li:last-child {
+     margin-bottom: 0.8rem;
+    }
+   
+    footer {
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem 0;
+    }
+   
+    #galerija .slike {
+     grid-template-columns: 1fr;
+    }
+   
+   
+    #galerija .sadrzaj {
+     padding: 1rem 0;
+    }
+    #katalog1{
+        grid-template-columns: 1fr;
+    }
+
+    #katalog2{
+        grid-template-columns: 1fr;
+    }
+
+    #katalog3{
+        grid-template-columns: 1fr;
+    }
+   
+   
+   }
