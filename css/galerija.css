@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+nav {
+    background-color: #b8734b;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif, Times, serif;
+  }
+  
+  nav img {
+    width: 90px;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+      display: flex;
+      
+  }
+  nav ul li {
+    padding-right: 5rem;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul li a:hover {
+    color: darkred
+  }
+  .navbar {
+      color: darkred;
+  }
+  .na-vrh {
+    position: fixed; /* fiksirana pozicija */
+    bottom: 40px; /* udaljenost od donje ivice ekrana */
+    right: 40px; /* udaljenost od desne ivice ekrana */
+	text-decoration: none; /* običan tekst / nije podvučen */
+    color: #fff; /* boja teksta */
+    background-color: rgba(0, 0, 0, 0.3); /* 30% vidljivost crne pozadine */
+    padding: 15px;
+}
+.na-vrh:hover {
+    background-color:  rgba(0, 0, 0, 0.5); /* 50% vidljivost crne pozadine */
+}
+
+  #galerija {
+    background-color: #b8734b;
+  }
+  
+  #galerija .sadrzaj {
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 0;
+  }
+  
+  #galerija .slike {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  #galerija .slike img {
+    width: 300px;
+    height: auto;
+    /* Da ne izadje iz okvira */
+    background-size: cover;
+  }
+
+  footer {
+    background-color: #b8734b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer img {
+    width: 100px;
+  }

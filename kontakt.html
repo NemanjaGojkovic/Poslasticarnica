@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sladak život</title>
+        <link rel="stylesheet" href="css/kontakt.css">
+        <link rel="stylesheet" media="screen and (max-width:1024px)" href="css/responsive.css">
+  
+        <link rel="shortcut icon" type="" href="img/tortica.png">
+
+        <!-- Map -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+
+      </head>
+
+
+
+<body>
+  <!-- Nav -->
+  <nav>
+    
+    <ul>
+      <li><a href="pocetna.html">Početna</a></li>
+      <li><a href="about.html">O nama</a></li>
+      <li><a href="shop.html">Katalog</a></li>
+      <li><a href="galerija.html">Galerija</a></li>
+      <li class="navbar">Kontakt</a></li>
+    </ul>
+    <a class="logo" href="about.html"><img src="img/tortica.png" alt="Logo"></a>
+  </nav>
+
+
+
+  <section id="kontakt">
+    <h1>Kako do nas</h1>
+    <div class="sadrzaj">
+      <div class="forma">
+
+
+        <form id="forma">
+          <label for="name">Ime i prezime</label>
+          <input id="name" type="text" name="Name" id="name" placeholder="Ime i prezime">
+          
+          <label for="number">Vaš broj telefona</label>
+          <input id="number" type="text" name="Number" id="number" placeholder="Broj telefona" >
+          
+          <label for="email" >E-mail adresa</label>
+          <input id="email" type="email" name="Email" id="email" placeholder="e-mail" >
+          
+          <label for="polje">Poruka za nas</label>
+          <textarea name="polje" id="polje" cols="30" rows="10" placeholder="Pišite nam Vaše želje"></textarea>
+         
+          <input id="submit" type="submit" value="Pošalji">
+
+          <small id="time"></small>
+        </form>
+      </div>
+
+      
+      <div class="map">
+        <div id="mapa"></div>
+        <div class="ikonice">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Maršala Tolbuhina 17, Novi Beograd</p>
+        </div>
+
+        <div class="ikonice">
+          <i class="fas fa-envelope"></i>
+          <p>info@poslasticarnicaSladakZivot.com</p>
+        </div>
+
+
+        <div class="ikonice">
+          <i class="fas fa-phone-alt"></i>
+          <p>060 63 44 693</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <div class="copy">
+      <a class="logo" href="about.html" target="_blank"><img src="img/tortica.png" alt="Logo"></a>
+      <p>Copyright &copy; "Sladak život" by B2</p>
+    </div>
+  </footer>
+
+  <script>
+    var mymap = L.map('mapa').setView([44.830600457215915, 20.41659559613583], 13);
+    var marker = L.marker([44.830600457215915, 20.41659559613583]).addTo(mymap);
+
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 20,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoiYWxla3NhNiIsImEiOiJja2k5OWxpamcwZGVzMnpsYjg5MWRqMnNsIn0.4Kt4PYt4rDkKi3uZolvOyA'
+    }).addTo(mymap);
+
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
